@@ -15,7 +15,7 @@ namespace WelcomeApi.Controllers
         public IActionResult Greeting(int side)
         {
             // Return the welcome message as a response.
-            var Result=(3*Math.Sqrt(3)/2)*Math.Pow(request.side,2);
+            var result=(3*Math.Sqrt(3)/2)*Math.Pow(side,2);
             return Ok(result);
         }
     }
